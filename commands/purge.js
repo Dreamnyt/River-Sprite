@@ -11,16 +11,12 @@ module.exports = {
 
     if (amountMessages > 100) {
       let tmp = amountMessages;
-      while (tmp > 1) {
-        if (tmp === 2) {
-          break;
-        }
-
+      while (tmp != 2) {
         if (tmp < 100) {
           message.channel.bulkDelete(tmp);
-          let remainder = tmp;
+          tmp -= tmp;
           tmp += 2;
-          tmp -= remainder;
+          console.log(tmp);
         } else {
           message.channel.bulkDelete(100);
           tmp -= 100;
