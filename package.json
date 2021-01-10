@@ -10,9 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0",
+    "cli-progress": "^3.8.2",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "fetch": "^1.1.0",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "progress": "^2.0.3",
+    "string-progressbar": "^1.0.1"
   }
 }
